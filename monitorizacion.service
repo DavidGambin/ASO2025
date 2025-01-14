@@ -1,0 +1,10 @@
+[Unit]
+Description=Script de monitorización ASO
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/david/monitorizacion.sh
+Restart=on-failure
+User=root
+
